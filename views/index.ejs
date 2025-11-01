@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="logo">To Do App</h1>
+
+        <form action="/submit" method="POST">
+            <input type="text" name="task" id="task" placeholder="What needs to be done?" required>
+            <button type="submit" class="btn">Add</button>
+        </form>
+        
+        <div class="menus">
+            <button type="button" class="menu" data-filter="all">All</button>
+            <button type="button" class="menu" data-filter="current">Current</button>
+            <button type="button" class="menu" data-filter="completed">Completed</button>
+        </div>
+        
+        <!-- Todo items will go here -->
+        <ul class="todo-list">
+            <!-- Your todos will be rendered here with EJS -->
+             <li class="todo">
+                <%todos.forEach(list => {%>
+                    <p class="todpro"><input type="checkbox" name="check" id="check"> <%=list.text%></p>
+                 <% }); %>
+             </li>
+             
+        </ul>
+
+        <footer class="footer">
+            <button type="button" class="footer-btn">Remove All Completed</button>
+        </footer>
+    </div>
+</body>
+</html>

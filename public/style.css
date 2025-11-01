@@ -1,0 +1,190 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECF4E8;
+    color: #93BFC7;
+}
+
+.main-container {
+    position: relative;
+    min-height: 600px;
+    margin: 5rem;
+    padding: 3rem;
+
+}
+
+.logo {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+form input {
+    width: 900px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 3px black;
+    margin: 0 10px 10px 0;
+}
+
+.btn {
+    background-color: #CBF3BB;  
+    color: #93BFC7;
+    padding: 10px 15px;
+    min-width: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ABE7B2;
+    color: #93BFC7;
+}
+
+.menus {
+    display: flex;
+    gap: 10px;
+}
+
+.menu {
+    font-weight: lighter;
+    font-size: 13px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu:active {
+    background-color: green;
+    color: red;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECF4E8;
+    color: #93BFC7;
+    font-family: Arial, sans-serif; /* Just adding a font */
+}
+
+.main-container {
+    position: relative;
+    min-height: 600px;
+    margin: 5rem;
+    padding: 3rem;
+}
+
+.logo {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex; /* Makes input and button sit nicely together */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input {
+    flex: 1; /* Input takes remaining space */
+    max-width: 900px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #CBF3BB; /* Added border instead of just shadow */
+    outline: none;
+    font-size: 16px; /* Slightly larger text */
+}
+
+form input:focus {
+    border-color: #93BFC7; /* Subtle feedback when typing */
+}
+
+.btn {
+    background-color: #CBF3BB;  
+    color: #93BFC7;
+    padding: 10px 15px;
+    min-width: 70px;
+    border: none; /* Remove default button border */
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px; /* Match input text size */
+}
+
+.btn:hover {
+    background-color: #ABE7B2;
+}
+
+.menus {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0; /* Better spacing */
+}
+
+.menu {
+    font-weight: lighter;
+    font-size: 13px;
+    padding: 8px 15px; /* Added padding for better click area */
+    border: 1px solid #93BFC7; /* Added subtle border */
+    background-color: transparent;
+    border-radius: 5px; /* Small radius */
+    cursor: pointer;
+    color: #93BFC7;
+}
+
+.menu:hover {
+    background-color: #CBF3BB;
+}
+
+.menu:active { /* Changed from :active to avoid confusion */
+    background-color: #93BFC7;
+    color: white;
+}
+
+.footer-btn {
+    background: none;
+    border: none;
+    color: #93BFC7;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.footer-btn:hover {
+    color: #5A9E8C;
+}
+
+.todo-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todpro {
+    background-color: white;
+    color: black;
+    max-width: 900px;
+    border: 1px solid #5A9E8C;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 3px #5A9E8C;
+}

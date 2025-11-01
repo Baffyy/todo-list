@@ -1,0 +1,32 @@
+import express from "express";
+import bodyParser from "body-parser";
+
+const app = express();
+const port = 3000; 
+const todos = [];
+let listedNumber = 1;
+
+app.use(express.urlencoded({extended:true}));
+app.use(express.static("public"))
+
+app.get("/", (req, res) => {
+    res.render("index.ejs", {todos: todos});
+})
+
+app.post("/submit", (req, res) => {
+    const listed = req.body.task;
+    const list = {
+        id: listedNumber++,
+        text: listed,
+        completed: false
+    };
+
+    todos.push(list);
+
+    res.render("index.ejs", {todos:todos})
+})
+
+
+app.listen(port, () => {
+    console.log("server is running");
+})
