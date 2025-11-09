@@ -24,11 +24,13 @@
         <!-- Todo items will go here -->
         <ul class="todo-list">
             <!-- Your todos will be rendered here with EJS -->
-             <li class="todo">
+            
                 <%todos.forEach(list => {%>
-                    <p class="todpro"><input type="checkbox" name="check" id="check"> <%=list.text%></p>
+                    <li class="todo">
+                     <p class="todpro"><input type="checkbox" name="check" id="check"> <%=list.text%></p>
+                    </li>  
                  <% }); %>
-             </li>
+             
              
         </ul>
 
@@ -36,5 +38,61 @@
             <button type="button" class="footer-btn">Remove All Completed</button>
         </footer>
     </div>
+
+
+    <script>
+        let currentFilter = document.querySelector('[data-filter= "current"]');
+        let allFilter = document.querySelector('[data-filter= "all"]');
+        let completedFilter = document.querySelector('[data-filter= "completed"]')
+        let removeFilter = document.querySelector("footer");
+
+
+        allFilter.addEventListener('click', () => {
+            const todos = document.querySelectorAll(".todo")
+
+            todos.forEach(todo => {
+            todo.classList.remove('hidden');
+            });
+        });
+        
+        currentFilter.addEventListener("click", () => {
+            const todos = document.querySelectorAll(".todo")
+
+            todos.forEach(todo => {
+                const cb = todo.querySelector("input[type='checkbox']");
+                if (cb && cb.checked) {
+                todo.classList.add("hidden");
+                }else { todo.classList.remove("hidden")}
+            })
+
+        });
+           
+        completedFilter.addEventListener("click", () => {
+            const todos = document.querySelectorAll(".todo")
+
+            todos.forEach(todo => {
+                const cb = todo.querySelector("input[type='checkbox']");
+                if (!cb.checked) {
+                todo.classList.add("hidden");
+                }else { todo.classList.remove("hidden")}
+            })
+
+        })
+
+        removeFilter.addEventListener("click", () => {
+            const todos = document.querySelectorAll(".todo");
+
+            todos.forEach(todo => {
+                const cb = todo.querySelector("input[type='checkbox']");
+                if (cb && cb.checked) {
+                    todo.remove()
+                }
+            })
+        })
+       
+       
+        
+        
+    </script>
 </body>
 </html>

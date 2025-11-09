@@ -18,12 +18,11 @@ app.post("/submit", (req, res) => {
     const list = {
         id: listedNumber++,
         text: listed,
-        completed: false
     };
 
     todos.push(list);
 
-    res.render("index.ejs", {todos:todos})
+    res.redirect('/')
 })
 
 
