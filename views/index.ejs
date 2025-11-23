@@ -21,10 +21,9 @@
             <button type="button" class="menu" data-filter="completed">Completed</button>
         </div>
         
-        <!-- Todo items will go here -->
+
         <ul class="todo-list">
-            <!-- Your todos will be rendered here with EJS -->
-            
+        
                 <%todos.forEach(list => {%>
                     <li class="todo">
                      <p class="todpro"><input type="checkbox" name="check" id="check"> <%=list.text%></p>

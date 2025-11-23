@@ -77,7 +77,7 @@ form input {
 body {
     background-color: #ECF4E8;
     color: #93BFC7;
-    font-family: Arial, sans-serif; /* Just adding a font */
+    font-family: Arial, sans-serif; 
 }
 
 .main-container {
@@ -93,23 +93,23 @@ body {
 }
 
 form {
-    display: flex; /* Makes input and button sit nicely together */
+    display: flex; 
     gap: 10px;
     margin-bottom: 20px;
 }
 
 form input {
-    flex: 1; /* Input takes remaining space */
+    flex: 1; 
     max-width: 900px;
     padding: 10px 15px;
     border-radius: 10px;
-    border: 2px solid #CBF3BB; /* Added border instead of just shadow */
+    border: 2px solid #CBF3BB; 
     outline: none;
-    font-size: 16px; /* Slightly larger text */
+    font-size: 16px; 
 }
 
 form input:focus {
-    border-color: #93BFC7; /* Subtle feedback when typing */
+    border-color: #93BFC7; 
 }
 
 .btn {
@@ -117,10 +117,10 @@ form input:focus {
     color: #93BFC7;
     padding: 10px 15px;
     min-width: 70px;
-    border: none; /* Remove default button border */
+    border: none; 
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px; /* Match input text size */
+    font-size: 16px; 
 }
 
 .btn:hover {
@@ -130,16 +130,16 @@ form input:focus {
 .menus {
     display: flex;
     gap: 10px;
-    margin: 20px 0; /* Better spacing */
+    margin: 20px 0; 
 }
 
 .menu {
     font-weight: lighter;
     font-size: 13px;
-    padding: 8px 15px; /* Added padding for better click area */
-    border: 1px solid #93BFC7; /* Added subtle border */
+    padding: 8px 15px; 
+    border: 1px solid #93BFC7; 
     background-color: transparent;
-    border-radius: 5px; /* Small radius */
+    border-radius: 5px; 
     cursor: pointer;
     color: #93BFC7;
 }
@@ -148,7 +148,7 @@ form input:focus {
     background-color: #CBF3BB;
 }
 
-.menu:active { /* Changed from :active to avoid confusion */
+.menu:active { 
     background-color: #93BFC7;
     color: white;
 }
