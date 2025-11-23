@@ -49,5 +49,50 @@ This project demonstrates server-side rendering, dynamic UI updates, routing, an
 ## ▶️ How to Run This Project Locally
 
 1. Clone the repo:
+git clone https://github.com/Baffyy/todo-list.git
+
+
+2. Navigate inside the folder:
+cd todo-list
+
+
+3. Install dependencies:
+npm install
+
+
+4. Start the server:
+node app.js
+or:
+nodemon app.js
+
+5. Open your browser and go to:
+http://localhost:3000
+
+
+
+---
+
+## 🌐 Live Demo 
+
+
+
+---
+
+## 📌 Future Improvements
+
+- Persistent storage using a database (MongoDB / PostgreSQL)  
+- User authentication  
+- Task categories  
+- Completion toggles  
+- REST API version  
+- Move to full-stack React + Node architecture  
+
+---
+
+## ✨ Author  
+**Baffour Gyimah**  
+Transitioning from sustainability into software development.  
+LinkedIn: www.linkedin.com/in/baffour-kwabena-gyimah
+
 
 
