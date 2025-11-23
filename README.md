@@ -31,7 +31,19 @@ This project demonstrates server-side rendering, dynamic UI updates, routing, an
 ---
 
 ## 🗂️ Project Structure
-
+TO DO LIST EJS/
+│
+├── views/
+│ ├── index.ejs
+│
+│
+├── public/
+│ └── style.css
+│
+├── index.js
+├──package-lock.json
+├── package.json
+└── README.md
 
 ---
 
